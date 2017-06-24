@@ -1,0 +1,80 @@
+
+OONIPROBE_USER=debian-ooni
+OONIPROBE_GROUP=debian-ooni
+VENV_ROOT=/usr/share/ooniprobe/venv/ooniprobe
+
+create_user() {
+    if ! getent passwd $OONIPROBE_USER > /dev/null; then
+        adduser --system --group --quiet --home /var/lib/ooni \
+            --no-create-home --shell /bin/sh \
+            --force-badname $OONIPROBE_USER
+    fi
+}
+
+create_symlinks() {
+    for cmd in ooniprobe ooniprobe-agent oonideckgen oonireport ooniresource;do
+        ln -sf $VENV_ROOT/bin/$cmd \
+            /usr/bin/$cmd
+    done
+
+    if ! [ -L "/var/lib/ooni" ] && [ -d "/var/lib/ooni" ]; then
+        cp -R /var/lib/ooni/* $VENV_ROOT/var/lib/ooni/
+        rm -rf /var/lib/ooni
+    fi
+    if ! [ -L "/var/lib/ooni" ]; then
+        ln -s $VENV_ROOT/var/lib/ooni /var/lib/ooni
+    fi
+
+    if ! [ -L "/usr/share/ooni" ] && [ -d /usr/share/ooni ]; then
+        cp -R /usr/share/ooni/* $VENV_ROOT/share/ooni/
+        rm -rf /usr/share/ooni
+    fi
+    if ! [ -L "/usr/share/ooni" ]; then
+        ln -s $VENV_ROOT/share/ooni /usr/share/ooni
+    fi
+}
+
+cleanup_obsolete() {
+    for fpath in /etc/default/ooniprobe /etc/cron.daily/ooniprobe /etc/cron.monthly/ooniprobe;do
+        [ -f $fpath ] && \
+            echo "Removing obsolete $fpath..." && \
+            rm -f $fpath
+    done
+    # Previous packages mispelled the user in uppercase
+    if getent passwd Debian-ooni > /dev/null; then
+        userdel Debian-ooni
+    fi
+
+}
+
+maybe_stop_daemon() {
+    invoke-rc.d ooniprobe stop || echo "ooniprobe was not running."
+}
+
+maybe_start_daemon() {
+    invoke-rc.d ooniprobe start || echo "ERROR: Could not start ooniprobe. Please report this bug to: https://github.com/TheTorProject/ooni-probe/issues/new"
+}
+
+fix_permissions() {
+    chown -R $OONIPROBE_USER:adm /var/log/ooni
+    chmod -R 775 /var/log/ooni
+
+    chown -R $OONIPROBE_USER:$OONIPROBE_GROUP /var/lib/ooni
+    chmod -R 775 /var/lib/ooni
+    chown -R $OONIPROBE_USER:$OONIPROBE_GROUP $VENV_ROOT/var/lib/ooni
+    chmod -R 775 $VENV_ROOT/var/lib/ooni
+}
+
+maybe_stop_daemon
+create_user
+create_symlinks
+
+if ! [ -d /var/log/ooni ]; then
+    mkdir /var/log/ooni
+    chown $OONIPROBE_USER:$OONIPROBE_GROUP /var/log/ooni
+fi
+
+fix_permissions
+cleanup_obsolete
+maybe_start_daemon
+
