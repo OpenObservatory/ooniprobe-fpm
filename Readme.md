@@ -73,3 +73,5 @@ sudo apt-get install ooniprobe
 ```
 
 Note: I am not currently signing these packages as I am still testing this out
+
+On macOS you can install them by downloading [this](https://bintray.com/openobservatory/macOS/download_file?file_path=ooniprobe-2.2.0-0.pkg)

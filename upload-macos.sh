@@ -3,13 +3,12 @@
 set -e
 
 VERSION=2.2.0-0
-ARCH=amd64
 
-FILE_TARGET_PATH=ooniprobe_${VERSION}_$ARCH.deb
+FILE_TARGET_PATH=ooniprobe-${VERSION}.pkg
 DEB_DISTRIBUTIONS="wheezy,jessie,stretch,sid,xenial,trusty"
 DEB_COMPONENT="main"
 DEB_ARCHITECTURE="$ARCH"
-UPLOAD_URL="https://api.bintray.com/content/openobservatory/deb/ooniprobe/${VERSION}/${FILE_TARGET_PATH};deb_distribution=$DEB_DISTRIBUTIONS;deb_component=main;deb_architecture=$DEB_ARCHITECTURE?publish=1"
+UPLOAD_URL="https://api.bintray.com/content/openobservatory/macOS/ooniprobe/${VERSION}/${FILE_TARGET_PATH}?publish=1&override=1"
 
 source priv8.sh
 

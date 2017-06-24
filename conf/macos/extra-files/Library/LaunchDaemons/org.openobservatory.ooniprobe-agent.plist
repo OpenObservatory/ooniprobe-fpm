@@ -1,0 +1,20 @@
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>Label</key><string>org.openobservatory.ooniprobe-agent.startup</string>
+ <key>ProgramArguments</key>
+ <array>
+    <string>/Library/Application Support/ooniprobe/venv/ooniprobe/bin/python</string>
+    <string>/Library/Application Support/ooniprobe/venv/ooniprobe/bin/ooniprobe-agent</string>
+    <string>run</string>
+ </array>
+ <key>RunAtLoad</key>
+   <true/>
+ <key>KeepAlive</key>
+   <true/>
+ <key>StandardErrorPath</key>
+   <string>/var/log/ooniprobe.err.log</string>
+ <key>StandardOutPath</key>
+   <string>/var/log/ooniprobe.stout.log</string>
+</dict>
+</plist>
