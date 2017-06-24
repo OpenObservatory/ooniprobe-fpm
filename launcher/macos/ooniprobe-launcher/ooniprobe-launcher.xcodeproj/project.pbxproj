@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17D8FBBE1EFED54E00160888 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FBBD1EFED54E00160888 /* AppDelegate.m */; };
+		17D8FBC11EFED54E00160888 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FBC01EFED54E00160888 /* main.m */; };
+		17D8FBC41EFED54E00160888 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FBC31EFED54E00160888 /* ViewController.m */; };
+		17D8FBC61EFED54E00160888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D8FBC51EFED54E00160888 /* Assets.xcassets */; };
+		17D8FBC91EFED54E00160888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D8FBC71EFED54E00160888 /* Main.storyboard */; };
+		17D8FBD41EFED54F00160888 /* ooniprobe_launcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FBD31EFED54F00160888 /* ooniprobe_launcherTests.m */; };
+		17D8FBDF1EFED54F00160888 /* ooniprobe_launcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D8FBDE1EFED54F00160888 /* ooniprobe_launcherUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17D8FBD01EFED54F00160888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D8FBB11EFED54E00160888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D8FBB81EFED54E00160888;
+			remoteInfo = "ooniprobe-launcher";
+		};
+		17D8FBDB1EFED54F00160888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D8FBB11EFED54E00160888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D8FBB81EFED54E00160888;
+			remoteInfo = "ooniprobe-launcher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17D8FBB91EFED54E00160888 /* ooniprobe-launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ooniprobe-launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D8FBBC1EFED54E00160888 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17D8FBBD1EFED54E00160888 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17D8FBC01EFED54E00160888 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17D8FBC21EFED54E00160888 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17D8FBC31EFED54E00160888 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17D8FBC51EFED54E00160888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17D8FBC81EFED54E00160888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17D8FBCA1EFED54E00160888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D8FBCF1EFED54F00160888 /* ooniprobe-launcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ooniprobe-launcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D8FBD31EFED54F00160888 /* ooniprobe_launcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ooniprobe_launcherTests.m; sourceTree = "<group>"; };
+		17D8FBD51EFED54F00160888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D8FBDA1EFED54F00160888 /* ooniprobe-launcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ooniprobe-launcherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D8FBDE1EFED54F00160888 /* ooniprobe_launcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ooniprobe_launcherUITests.m; sourceTree = "<group>"; };
+		17D8FBE01EFED54F00160888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17D8FBB61EFED54E00160888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D8FBCC1EFED54F00160888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D8FBD71EFED54F00160888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17D8FBB01EFED54E00160888 = {
+			isa = PBXGroup;
+			children = (
+				17D8FBBB1EFED54E00160888 /* ooniprobe-launcher */,
+				17D8FBD21EFED54F00160888 /* ooniprobe-launcherTests */,
+				17D8FBDD1EFED54F00160888 /* ooniprobe-launcherUITests */,
+				17D8FBBA1EFED54E00160888 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17D8FBBA1EFED54E00160888 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17D8FBB91EFED54E00160888 /* ooniprobe-launcher.app */,
+				17D8FBCF1EFED54F00160888 /* ooniprobe-launcherTests.xctest */,
+				17D8FBDA1EFED54F00160888 /* ooniprobe-launcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17D8FBBB1EFED54E00160888 /* ooniprobe-launcher */ = {
+			isa = PBXGroup;
+			children = (
+				17D8FBBC1EFED54E00160888 /* AppDelegate.h */,
+				17D8FBBD1EFED54E00160888 /* AppDelegate.m */,
+				17D8FBC21EFED54E00160888 /* ViewController.h */,
+				17D8FBC31EFED54E00160888 /* ViewController.m */,
+				17D8FBC51EFED54E00160888 /* Assets.xcassets */,
+				17D8FBC71EFED54E00160888 /* Main.storyboard */,
+				17D8FBCA1EFED54E00160888 /* Info.plist */,
+				17D8FBBF1EFED54E00160888 /* Supporting Files */,
+			);
+			path = "ooniprobe-launcher";
+			sourceTree = "<group>";
+		};
+		17D8FBBF1EFED54E00160888 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17D8FBC01EFED54E00160888 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17D8FBD21EFED54F00160888 /* ooniprobe-launcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				17D8FBD31EFED54F00160888 /* ooniprobe_launcherTests.m */,
+				17D8FBD51EFED54F00160888 /* Info.plist */,
+			);
+			path = "ooniprobe-launcherTests";
+			sourceTree = "<group>";
+		};
+		17D8FBDD1EFED54F00160888 /* ooniprobe-launcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17D8FBDE1EFED54F00160888 /* ooniprobe_launcherUITests.m */,
+				17D8FBE01EFED54F00160888 /* Info.plist */,
+			);
+			path = "ooniprobe-launcherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17D8FBB81EFED54E00160888 /* ooniprobe-launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D8FBE31EFED54F00160888 /* Build configuration list for PBXNativeTarget "ooniprobe-launcher" */;
+			buildPhases = (
+				17D8FBB51EFED54E00160888 /* Sources */,
+				17D8FBB61EFED54E00160888 /* Frameworks */,
+				17D8FBB71EFED54E00160888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ooniprobe-launcher";
+			productName = "ooniprobe-launcher";
+			productReference = 17D8FBB91EFED54E00160888 /* ooniprobe-launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17D8FBCE1EFED54F00160888 /* ooniprobe-launcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D8FBE61EFED54F00160888 /* Build configuration list for PBXNativeTarget "ooniprobe-launcherTests" */;
+			buildPhases = (
+				17D8FBCB1EFED54F00160888 /* Sources */,
+				17D8FBCC1EFED54F00160888 /* Frameworks */,
+				17D8FBCD1EFED54F00160888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17D8FBD11EFED54F00160888 /* PBXTargetDependency */,
+			);
+			name = "ooniprobe-launcherTests";
+			productName = "ooniprobe-launcherTests";
+			productReference = 17D8FBCF1EFED54F00160888 /* ooniprobe-launcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17D8FBD91EFED54F00160888 /* ooniprobe-launcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D8FBE91EFED54F00160888 /* Build configuration list for PBXNativeTarget "ooniprobe-launcherUITests" */;
+			buildPhases = (
+				17D8FBD61EFED54F00160888 /* Sources */,
+				17D8FBD71EFED54F00160888 /* Frameworks */,
+				17D8FBD81EFED54F00160888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17D8FBDC1EFED54F00160888 /* PBXTargetDependency */,
+			);
+			name = "ooniprobe-launcherUITests";
+			productName = "ooniprobe-launcherUITests";
+			productReference = 17D8FBDA1EFED54F00160888 /* ooniprobe-launcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17D8FBB11EFED54E00160888 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = openobservatory;
+				TargetAttributes = {
+					17D8FBB81EFED54E00160888 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EK8VTHLYE3;
+						ProvisioningStyle = Automatic;
+					};
+					17D8FBCE1EFED54F00160888 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EK8VTHLYE3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 17D8FBB81EFED54E00160888;
+					};
+					17D8FBD91EFED54F00160888 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EK8VTHLYE3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 17D8FBB81EFED54E00160888;
+					};
+				};
+			};
+			buildConfigurationList = 17D8FBB41EFED54E00160888 /* Build configuration list for PBXProject "ooniprobe-launcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17D8FBB01EFED54E00160888;
+			productRefGroup = 17D8FBBA1EFED54E00160888 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17D8FBB81EFED54E00160888 /* ooniprobe-launcher */,
+				17D8FBCE1EFED54F00160888 /* ooniprobe-launcherTests */,
+				17D8FBD91EFED54F00160888 /* ooniprobe-launcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17D8FBB71EFED54E00160888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D8FBC61EFED54E00160888 /* Assets.xcassets in Resources */,
+				17D8FBC91EFED54E00160888 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D8FBCD1EFED54F00160888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D8FBD81EFED54F00160888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17D8FBB51EFED54E00160888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D8FBC41EFED54E00160888 /* ViewController.m in Sources */,
+				17D8FBC11EFED54E00160888 /* main.m in Sources */,
+				17D8FBBE1EFED54E00160888 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D8FBCB1EFED54F00160888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D8FBD41EFED54F00160888 /* ooniprobe_launcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D8FBD61EFED54F00160888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D8FBDF1EFED54F00160888 /* ooniprobe_launcherUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17D8FBD11EFED54F00160888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17D8FBB81EFED54E00160888 /* ooniprobe-launcher */;
+			targetProxy = 17D8FBD01EFED54F00160888 /* PBXContainerItemProxy */;
+		};
+		17D8FBDC1EFED54F00160888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17D8FBB81EFED54E00160888 /* ooniprobe-launcher */;
+			targetProxy = 17D8FBDB1EFED54F00160888 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17D8FBC71EFED54E00160888 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D8FBC81EFED54E00160888 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17D8FBE11EFED54F00160888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		17D8FBE21EFED54F00160888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		17D8FBE41EFED54F00160888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EK8VTHLYE3;
+				INFOPLIST_FILE = "ooniprobe-launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openobservatory.ooniprobe-launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		17D8FBE51EFED54F00160888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EK8VTHLYE3;
+				INFOPLIST_FILE = "ooniprobe-launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openobservatory.ooniprobe-launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		17D8FBE71EFED54F00160888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EK8VTHLYE3;
+				INFOPLIST_FILE = "ooniprobe-launcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openobservatory.ooniprobe-launcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ooniprobe-launcher.app/Contents/MacOS/ooniprobe-launcher";
+			};
+			name = Debug;
+		};
+		17D8FBE81EFED54F00160888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EK8VTHLYE3;
+				INFOPLIST_FILE = "ooniprobe-launcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openobservatory.ooniprobe-launcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ooniprobe-launcher.app/Contents/MacOS/ooniprobe-launcher";
+			};
+			name = Release;
+		};
+		17D8FBEA1EFED54F00160888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EK8VTHLYE3;
+				INFOPLIST_FILE = "ooniprobe-launcherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openobservatory.ooniprobe-launcherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ooniprobe-launcher";
+			};
+			name = Debug;
+		};
+		17D8FBEB1EFED54F00160888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EK8VTHLYE3;
+				INFOPLIST_FILE = "ooniprobe-launcherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.openobservatory.ooniprobe-launcherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ooniprobe-launcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17D8FBB41EFED54E00160888 /* Build configuration list for PBXProject "ooniprobe-launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D8FBE11EFED54F00160888 /* Debug */,
+				17D8FBE21EFED54F00160888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D8FBE31EFED54F00160888 /* Build configuration list for PBXNativeTarget "ooniprobe-launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D8FBE41EFED54F00160888 /* Debug */,
+				17D8FBE51EFED54F00160888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D8FBE61EFED54F00160888 /* Build configuration list for PBXNativeTarget "ooniprobe-launcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D8FBE71EFED54F00160888 /* Debug */,
+				17D8FBE81EFED54F00160888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D8FBE91EFED54F00160888 /* Build configuration list for PBXNativeTarget "ooniprobe-launcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D8FBEA1EFED54F00160888 /* Debug */,
+				17D8FBEB1EFED54F00160888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17D8FBB11EFED54E00160888 /* Project object */;
+}
