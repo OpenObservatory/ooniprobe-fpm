@@ -95,4 +95,4 @@ sudo apt-get install ooniprobe
 
 On macOS you can get it from:
 
-https://dl.bintray.com/openobservatory/macOS/ooniprobe-2.2.0-0.pkg
+https://dl.bintray.com/openobservatory/macOS/ooniprobe-2.2.0-0.dmg
