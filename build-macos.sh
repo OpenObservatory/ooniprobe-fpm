@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 source build-config.sh
 
@@ -20,3 +21,11 @@ fpm --input-type virtualenv \
     --virtualenv-other-files-dir conf/macos/extra-files \
     --force \
     "ooniprobe==$OONIPROBE_VERSION"
+
+echo -n "[+] "
+touch -f dist/ooniprobe-$PKG_VERSION-macos && rm -rf dist/ooniprobe-$PKG_VERSION-macos
+mkdir dist/ooniprobe-$PKG_VERSION-macos
+cp dist/ooniprobe-$PKG_VERSION.pkg dist/ooniprobe-$PKG_VERSION-macos/Install\ ooniprobe.pkg
+
+cd create-dmg && ./create-dmg --window-size 500 320 --background ../conf/macos/installer-background.png --icon-size 96 --icon "Install ooniprobe.pkg" 260 130 --hide-extension "Install ooniprobe.pkg" --volname "Install ooniprobe" ../dist/ooniprobe-$PKG_VERSION.dmg ../dist/ooniprobe-$PKG_VERSION-macos
+rm -rf dist/ooniprobe-$PKG_VERSION-macos

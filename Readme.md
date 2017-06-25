@@ -54,6 +54,20 @@ You should then have a ready to ship in `dist/`.
 
 This **must** be run from a debian or ubuntu machine that is the same architecture as the system you are targetting.
 
+### Building macos
+
+Before doing this be sure you have run `macos-init.sh`.
+
+Also on macOS there is an issue with fpm so you should use my fork instead.
+
+To build macOS packages you should run:
+
+```
+./build-macos.sh
+```
+
+You will then have a spiffy dmg inside of dist.
+
 ### Uploading packages
 
 To upload packages be sure to edit `upload-deb.sh` to reflect the actual version number (and create `priv8.sh` with your bintray username and key see `priv8.sh.example`), then run:
@@ -62,7 +76,12 @@ To upload packages be sure to edit `upload-deb.sh` to reflect the actual version
 ./upload-deb.sh
 ```
 
-### Installing packages
+## Installation
+
+Note: I am not currently signing these packages as I am still testing this
+out.
+
+### Debian
 
 On debian to install the package you will need to do (replace `{distribution}` with your distribution):
 
@@ -72,6 +91,8 @@ sudo apt-get update
 sudo apt-get install ooniprobe
 ```
 
-Note: I am not currently signing these packages as I am still testing this out
+### macOS
 
-On macOS you can install them by downloading [this](https://bintray.com/openobservatory/macOS/download_file?file_path=ooniprobe-2.2.0-0.pkg)
+On macOS you can get it from:
+
+https://dl.bintray.com/openobservatory/macOS/ooniprobe-2.2.0-0.pkg
