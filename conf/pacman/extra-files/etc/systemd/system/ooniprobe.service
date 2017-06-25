@@ -1,0 +1,13 @@
+[Unit]
+Description=ooniprobe-agent system service
+Documentation=man:ooniprobe(1) https://ooni.torproject.org/
+
+[Service]
+User=arch-ooni
+Type=forking
+ExecStart=/usr/bin/ooniprobe-agent start
+ExecStop=/usr/bin/ooniprobe-agent stop
+PIDFile=/var/lib/ooni/twistd.pid
+
+[Install]
+WantedBy=multi-user.target

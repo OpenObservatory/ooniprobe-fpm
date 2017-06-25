@@ -8,11 +8,21 @@
 Vagrant.configure("2") do |config|
 
     config.vm.define "trusty64" do |trusty64|
-        config.vm.box = "ubuntu/trusty64"
+        trusty64.vm.box = "ubuntu/trusty64"
     end
     config.vm.define "trusty32" do |trusty32|
-        config.vm.box = "ubuntu/trusty32"
+        trusty32.vm.box = "ubuntu/trusty32"
+    end
+    config.vm.define "arch" do |arch|
+        arch.vm.box = "archlinux/archlinux"
+    end
+
+    config.vm.define "fedora25" do |fedora25|
+        fedora25.vm.box = "fedora/25-atomic-host"
+        fedora25.vm.synced_folder ".", "/vagrant", disabled: true
+        fedora25.vm.synced_folder ".", "/home/vagrant/", type: "rsync"
     end
 
     config.vm.synced_folder ".", "/vagrant"
+
 end

@@ -2,8 +2,6 @@
 
 source build-config.sh
 
-copy_manpages
-
 echo "[+] Building Effing macos package..."
 fpm --input-type virtualenv \
     --output-type osxpkg \
@@ -12,7 +10,7 @@ fpm --input-type virtualenv \
     --log info \
     --name "$PKG_NAME" \
     --description "$PKG_DESCRIPTION" \
-    --version "$VERSION" \
+    --version "$PKG_VERSION" \
     --maintainer "$PKG_MAINTAINER" \
     --url "$PKG_URL" \
     --osxpkg-identifier-prefix org.openobservatory.pyooniprobe \
@@ -21,4 +19,4 @@ fpm --input-type virtualenv \
     --before-remove conf/macos/before-remove.sh \
     --virtualenv-other-files-dir conf/macos/extra-files \
     --force \
-    "ooniprobe==$VERSION"
+    "ooniprobe==$OONIPROBE_VERSION"

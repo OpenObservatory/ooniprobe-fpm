@@ -1,0 +1,3 @@
+set -e
+
+invoke-rc.d ooniprobe stop

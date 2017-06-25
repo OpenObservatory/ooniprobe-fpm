@@ -1,0 +1,1 @@
+invoke-rc.d ooniprobe restart || echo "ERROR: Could not restart ooniprobe. Please report this bug to: https://github.com/TheTorProject/ooni-probe/issues/new"

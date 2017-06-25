@@ -9,8 +9,8 @@ Status:
 * [x] Debian stretch
 * [x] Ubuntu xenial
 * [x] Ubuntu trusty
-* [ ] macOS (WIP)
-* [ ] Arch linux
+* [x] macOS
+* [x] Arch linux
 * [ ] Fedora
 * [ ] CentOS
 

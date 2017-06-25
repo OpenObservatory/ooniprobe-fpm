@@ -1,4 +1,5 @@
-export VERSION="2.2.0"
+export OONIPROBE_VERSION="2.2.0"
+export PKG_VERSION="2.2.0-0"
 export OONIPROBE_SRC="$HOME/code/OONI/ooni-probe"
 export PKG_NAME="ooniprobe"
 export PKG_MAINTAINER="Open Observatory of Network Interference <contact@openobservatory.org>"

@@ -3,7 +3,7 @@
 set -e
 
 VERSION=2.2.0-0
-ARCH=amd64
+ARCH=i386
 
 FILE_TARGET_PATH=ooniprobe_${VERSION}_$ARCH.deb
 DEB_DISTRIBUTIONS="wheezy,jessie,stretch,sid,xenial,trusty"
