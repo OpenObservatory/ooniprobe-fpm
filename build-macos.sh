@@ -17,6 +17,7 @@ fpm --input-type virtualenv \
     --osxpkg-identifier-prefix org.openobservatory.pyooniprobe \
     --virtualenv-install-location /Library/Application\ Support/ooniprobe/venv \
     --after-install conf/macos/after-install.sh \
+    --before-install conf/macos/before-install.sh \
     --before-remove conf/macos/before-remove.sh \
     --virtualenv-other-files-dir conf/macos/extra-files \
     --force \
