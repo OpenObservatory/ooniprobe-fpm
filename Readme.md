@@ -11,8 +11,8 @@ Status:
 * [x] Ubuntu trusty
 * [x] macOS
 * [x] Arch linux
-* [ ] Fedora
-* [ ] CentOS
+* [ ] Fedora (WIP)
+* [ ] CentOS (WIP)
 
 ## Requirements
 
